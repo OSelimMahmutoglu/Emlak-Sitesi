@@ -1,4 +1,4 @@
 # Emlak-Sitesi
 http://fikirtepekentselemlak.com/
 
-ilanların bulunduğu bir anasayva, iletişim ve hakkımızda sayfası olan emlak sitesi.Herhangibir database kullanılmadan tasarlanmıştır. Anasayfadaki ilanlar json formatındaki bir belgenin içerisinden alınmıştır. 
+ASP.NET MVC Kullanılarak yapılmıştır.İlanların bulunduğu bir anasayfa, iletişim ve hakkımızda sayfası vardır.Herhangibir database kullanılmadan tasarlanmıştır. Anasayfadaki ilanlar json formatındaki bir belgenin içerisinden alınmıştır. 
