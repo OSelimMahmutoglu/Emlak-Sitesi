@@ -10,6 +10,8 @@ using System.Web.Script.Serialization;
 using static System.Net.Mime.MediaTypeNames;
 using System.Runtime.Serialization.Json;
 using Newtonsoft.Json;
+using System.Net.Mail;
+using System.Net;
 
 namespace Emlak_Sitesi.Controllers
 {
@@ -50,7 +52,7 @@ namespace Emlak_Sitesi.Controllers
             notDefteri.Close();
         }
 
-        
+
         public ActionResult Index()
         {
             string path = Server.MapPath("/wwwroot");
@@ -61,15 +63,11 @@ namespace Emlak_Sitesi.Controllers
 
         public ActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
-
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewData["Message"] = "Your contact page.";
-
             return View();
         }
 
@@ -79,7 +77,62 @@ namespace Emlak_Sitesi.Controllers
         }
         public ActionResult Iletisim()
         {
-            return View();
+            ViewBag.msg = "";
+            Form form = new Form();
+            return View(form);
+        }
+        [HttpPost]
+        public ActionResult Iletisim(Form Form)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(Form.Tel) || string.IsNullOrEmpty(Form.AdSoyad) || string.IsNullOrEmpty(Form.Konu) || string.IsNullOrEmpty(Form.Mesaj))
+                {
+                    ModelState.AddModelError(string.Empty, "Hata");
+                    return View(Form);
+                }
+
+                //MailMessage ePosta = new MailMessage();
+                //ePosta.From = new MailAddress("destek@fikirtepekentselemlak.com");
+                //ePosta.To.Add("info@fikirtepekentselemlak.com");
+                //ePosta.Subject = Form.Konu;
+                //ePosta.Body = Form.Mesaj;
+
+                //SmtpClient smtp = new SmtpClient();
+                //smtp.UseDefaultCredentials = false;
+                //smtp.Credentials = new System.Net.NetworkCredential("destek@fikirtepekentselemlak.com", "asd123_.");
+                //smtp.Port = 587;
+                //smtp.Host = "mail.fikirtepekentselemlak.com";
+                //smtp.Send(ePosta);
+
+                SmtpClient smtpClient = new SmtpClient();
+                NetworkCredential basicCredential =
+                    new NetworkCredential("destek@fikirtepekentselemlak.com", "OMERihsan190");
+                MailMessage message = new MailMessage();
+                MailAddress fromAddress = new MailAddress("destek@fikirtepekentselemlak.com");
+                smtpClient.Port = 587;
+                smtpClient.Host = "mail.fikirtepekentselemlak.com";
+                smtpClient.UseDefaultCredentials = false;
+                smtpClient.Credentials = basicCredential;
+
+                message.From = fromAddress;
+                message.Subject = Form.Konu;
+                message.IsBodyHtml = true;
+                message.Body = $"<h2>{Form.Mesaj}</h2></br>İsim:{Form.AdSoyad}<br>Email:{Form.Email}<br>Telefon:{Form.Tel}";
+                message.To.Add("info@fikirtepekentselemlak.com");
+                smtpClient.Send(message);
+
+
+                ViewBag.msg = $"SAYIN {Form.AdSoyad.ToUpper()} MESAJINIZ İLETİLMİŞTİR.MESAJINIZ DOĞRULTUSUNDA EN KISA ZAMANDA GERİ DÖNÜŞ SAĞLANACAKTIR.İYİ GÜNLER DİLERİZ...";
+                return View();
+            }
+
+            catch (Exception ex)
+            {
+                ViewBag.msg = ex.Message;
+                ModelState.AddModelError(string.Empty, "Hata:" + ex.Message);
+                return View(Form);
+            }
         }
     }
 }

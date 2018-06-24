@@ -1,0 +1,62 @@
+﻿@model List<Emlak_Sitesi.Models.Ilan>
+@{
+    ViewData["Title"] = "Fikirtepe Kentsel Emlak | Ana Sayfa";
+    Layout = "~/Views/_Layout.cshtml";
+    List<Emlak_Sitesi.Models.Ilan> ilanlar = Model;
+}
+
+<script src="~/wwwroot/js/angular.min.js"></script>
+
+<div class="page-head">
+    <div class="container">
+        <div class="row">
+            <div class="page-head-content">
+                <h1 class="page-title">FİKİRTEPE KENTSEL EMLAK SATILIK DAİRELER VE ARSALAR</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-12" ng-app="myApp" ng-controller="myCtrl">
+    <div id="list-type" class="proerty-th">
+        @foreach (var item in Model)
+        {
+            <div class="col-sm-6 col-md-3 p0">
+                <div class="box-two proerty-item">
+                    <div class="item-thumb center">
+                        <div class="item-thumb">
+                            <a href="@Url.Action("Index","Home")">
+                                <img src="~/wwwroot/assets/img/fikirtepe_ilan.png">
+                                <h3>@item.Baslik</h3>
+                            </a>
+                            <h4><b>Büyüklüğü:</b>@item.BuyuklukM m²</h4>
+                            <h4><b>Metrakare Fiyatı:</b>@item.Fiyat ₺</h4>
+                            <h4><b>Toplam Fiyatı:</b>@(Convert.ToInt32(item.Fiyat * Convert.ToDecimal(item.BuyuklukM))) ₺</h4>
+
+                        </div>
+
+                    </div>
+                    <div class="item-entry overflow">
+                        <h5>
+                            <a href="@Url.Action("Index","Home")">
+                                @item.SatisTipi
+                            </a>
+                        </h5>
+                        <div class="dot-hr"></div>
+                        <span class="pull-left"><b> Açıklama :</b> @( item.IlansAciklama.Substring(0, item.IlansAciklama.Length<30? item.IlansAciklama.Length:30))... </span>
+                    </div>
+                </div>
+            </div>
+        }
+
+    </div>
+</div>
+
+
+<script>
+    var app = angular.module('myApp', []);
+    app.controller('myCtrl', function ($scope, $http) {
+
+
+    });
+</script>
