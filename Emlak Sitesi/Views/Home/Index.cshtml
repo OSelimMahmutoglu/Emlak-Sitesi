@@ -21,29 +21,33 @@
     <div id="list-type" class="proerty-th">
         @foreach (var item in Model)
         {
-            <div class="col-sm-6 col-md-3 p0">
+            <div class="col-sm-6 col-md-4 col-lg-3 col-xs-12 p0">
                 <div class="box-two proerty-item">
                     <div class="item-thumb center">
                         <div class="item-thumb">
-                            <a href="@Url.Action("Index","Home")">
+                            <a href="@Url.Action("Properties","Home" , new {ID= item.ID})">
                                 <img src="~/wwwroot/assets/img/fikirtepe_ilan.png">
                                 <h3>@item.Baslik</h3>
                             </a>
+                            @if (!String.IsNullOrEmpty(item.MetrekareFiyati))
+                            {<h4><b>Metrekare Fiyatı:</b>@item.MetrekareFiyati ₺</h4>}
+                        else
+                        {
+                            <h4>&nbsp;</h4>
+                        }
+                            <h4><b>Toplam Fiyatı:</b>@item.Fiyat ₺</h4>
                             <h4><b>Büyüklüğü:</b>@item.BuyuklukM m²</h4>
-                            <h4><b>Metrakare Fiyatı:</b>@item.Fiyat ₺</h4>
-                            <h4><b>Toplam Fiyatı:</b>@(Convert.ToInt32(item.Fiyat * Convert.ToDecimal(item.BuyuklukM))) ₺</h4>
-
                         </div>
 
                     </div>
                     <div class="item-entry overflow">
                         <h5>
-                            <a href="@Url.Action("Index","Home")">
+                            <a href="@Url.Action("Properties","Home" , new {ID= item.ID})">
                                 @item.SatisTipi
                             </a>
                         </h5>
                         <div class="dot-hr"></div>
-                        <span class="pull-left"><b> Açıklama :</b> @( item.IlansAciklama.Substring(0, item.IlansAciklama.Length<30? item.IlansAciklama.Length:30))... </span>
+                        <span class="pull-left"><b> Açıklama :</b> @( item.IlansAciklama.Substring(0, item.IlansAciklama.Length < 30 ? item.IlansAciklama.Length : 30)) <a href="@Url.Action("Properties","Home" , new {ID= item.ID})">...</a> </span>
                     </div>
                 </div>
             </div>

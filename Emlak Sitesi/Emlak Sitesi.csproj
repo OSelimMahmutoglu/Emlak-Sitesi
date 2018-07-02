@@ -598,6 +598,7 @@
     <Content Include="wwwroot\assets\img\controls.png" />
     <Content Include="wwwroot\assets\img\default-property.jpg" />
     <Content Include="wwwroot\assets\img\dsdsds33 - Copy.png" />
+    <Content Include="wwwroot\assets\img\FikirtepeKentselemlakLogo.png" />
     <Content Include="wwwroot\assets\img\fikirtepe_ilan.png" />
     <Content Include="wwwroot\assets\img\footer-logo-2.png" />
     <Content Include="wwwroot\assets\img\footer-logo.png" />
@@ -616,6 +617,7 @@
     <Content Include="wwwroot\assets\img\icon\sale-orange.png" />
     <Content Include="wwwroot\assets\img\icon\shawer-orange.png" />
     <Content Include="wwwroot\assets\img\icon\shawer.png" />
+    <Content Include="wwwroot\assets\img\ismailMahmutoglu.jpg" />
     <Content Include="wwwroot\assets\img\logo.png" />
     <Content Include="wwwroot\assets\img\preloader.gif" />
     <Content Include="wwwroot\assets\img\pro-ads.jpg" />
@@ -797,6 +799,7 @@
     <Content Include="Views\Home\Iletisim.cshtml" />
     <Content Include="Scripts\version.json" />
     <Content Include="wwwroot\Note.JSON" />
+    <Content Include="Views\Home\Properties.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

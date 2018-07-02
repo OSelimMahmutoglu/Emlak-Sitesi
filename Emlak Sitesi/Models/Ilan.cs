@@ -11,7 +11,8 @@ namespace Emlak_Sitesi.Models
         public Guid ID { get; set; }
         public string Baslik { get; set; }
         public string AdresAciklama { get; set; }
-        public decimal Fiyat { get; set; }
+        public string Fiyat { get; set; }
+        public string MetrekareFiyati { get; set; }
         public double BuyuklukM { get; set; }
         public string IlansAciklama { get; set; }
         public DateTime EklemeTarihi { get; set; }

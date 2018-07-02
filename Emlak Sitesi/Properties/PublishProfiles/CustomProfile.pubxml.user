@@ -14,22 +14,22 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/06/2018 13:29:28</publishTime>
     </File>
     <File Include="bin/Antlr3.Runtime.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>02/22/2013 07:43:40</publishTime>
     </File>
     <File Include="bin/Antlr3.Runtime.pdb">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>02/22/2013 07:43:40</publishTime>
     </File>
     <File Include="bin/ApplicationInsights.config">
       <publishTime>02/06/2018 13:29:28</publishTime>
     </File>
     <File Include="bin/Emlak Sitesi.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>07/02/2018 22:05:11</publishTime>
     </File>
     <File Include="bin/Emlak Sitesi.pdb">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>07/02/2018 22:05:11</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>11/30/2016 16:07:42</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.DependencyCollector.dll">
       <publishTime>07/12/2016 11:45:42</publishTime>
@@ -50,13 +50,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/12/2016 15:09:52</publishTime>
     </File>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>10/16/2017 14:14:32</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
       <publishTime>05/01/2012 10:08:46</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/24/2018 17:44:14</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
       <publishTime>01/01/0001 00:00:00</publishTime>
@@ -203,25 +203,25 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="bin/System.Web.Helpers.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>01/28/2015 03:04:30</publishTime>
     </File>
     <File Include="bin/System.Web.Mvc.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>01/28/2015 03:02:18</publishTime>
     </File>
     <File Include="bin/System.Web.Optimization.dll">
       <publishTime>11/02/2014 14:26:04</publishTime>
     </File>
     <File Include="bin/System.Web.Razor.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>01/28/2015 03:02:32</publishTime>
     </File>
     <File Include="bin/System.Web.WebPages.Deployment.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>01/28/2015 03:04:30</publishTime>
     </File>
     <File Include="bin/System.Web.WebPages.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>01/28/2015 03:04:30</publishTime>
     </File>
     <File Include="bin/System.Web.WebPages.Razor.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>01/28/2015 03:04:30</publishTime>
     </File>
     <File Include="bin/WebGrease.dll">
       <publishTime>10/09/2013 17:28:38</publishTime>
@@ -1505,13 +1505,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/06/2018 15:59:42</publishTime>
     </File>
     <File Include="Views/Home/About.cshtml">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/23/2018 12:26:35</publishTime>
     </File>
     <File Include="Views/Home/Iletisim.cshtml">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/23/2018 19:28:11</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>07/02/2018 22:10:31</publishTime>
+    </File>
+    <File Include="Views/Home/Properties.cshtml">
+      <publishTime>07/02/2018 22:02:49</publishTime>
     </File>
     <File Include="Views/Register/Index.cshtml">
       <publishTime>02/06/2018 11:34:12</publishTime>
@@ -1520,22 +1523,22 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/06/2018 13:29:13</publishTime>
     </File>
     <File Include="Views/Shared/_FooterPartial.cshtml">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/30/2018 15:02:04</publishTime>
     </File>
     <File Include="Views/Shared/_HeaderPartial.cshtml">
       <publishTime>06/24/2018 12:53:35</publishTime>
     </File>
     <File Include="Views/Web.config">
-      <publishTime>02/06/2018 13:29:13</publishTime>
+      <publishTime>06/30/2018 16:52:32</publishTime>
     </File>
     <File Include="Views/_Layout.cshtml">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/30/2018 17:35:39</publishTime>
     </File>
     <File Include="Views/_ViewStart.cshtml">
       <publishTime>02/06/2018 13:44:25</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/30/2018 17:40:48</publishTime>
     </File>
     <File Include="wwwroot/assets/css/animate.css">
       <publishTime>02/06/2018 11:34:13</publishTime>
@@ -1592,7 +1595,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/06/2018 11:34:13</publishTime>
     </File>
     <File Include="wwwroot/assets/css/style.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/23/2018 10:11:17</publishTime>
     </File>
     <File Include="wwwroot/assets/css/styleNoJS.css">
       <publishTime>02/06/2018 11:34:13</publishTime>
@@ -1712,19 +1715,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/06/2018 11:34:15</publishTime>
     </File>
     <File Include="wwwroot/assets/img/blog1.jpg">
-      <publishTime>02/06/2018 11:34:14</publishTime>
+      <publishTime>06/02/2018 11:34:14</publishTime>
     </File>
     <File Include="wwwroot/assets/img/blog2.jpg">
-      <publishTime>02/06/2018 11:34:14</publishTime>
+      <publishTime>06/02/2018 11:34:14</publishTime>
     </File>
     <File Include="wwwroot/assets/img/chevron-down.png">
       <publishTime>02/06/2018 11:34:14</publishTime>
     </File>
     <File Include="wwwroot/assets/img/client-face1.png">
-      <publishTime>02/06/2018 11:34:14</publishTime>
+      <publishTime>06/02/2018 11:34:14</publishTime>
     </File>
     <File Include="wwwroot/assets/img/client-face2.png">
-      <publishTime>02/06/2018 11:34:14</publishTime>
+      <publishTime>06/02/2018 11:34:14</publishTime>
     </File>
     <File Include="wwwroot/assets/img/controls.png">
       <publishTime>02/06/2018 11:34:14</publishTime>
@@ -1733,46 +1736,49 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/06/2018 11:34:14</publishTime>
     </File>
     <File Include="wwwroot/assets/img/demo/property-1.jpg">
-      <publishTime>02/06/2018 11:34:15</publishTime>
+      <publishTime>06/02/2018 11:34:15</publishTime>
     </File>
     <File Include="wwwroot/assets/img/demo/property-2.jpg">
-      <publishTime>02/06/2018 11:34:15</publishTime>
+      <publishTime>06/02/2018 11:34:15</publishTime>
     </File>
     <File Include="wwwroot/assets/img/demo/property-3.jpg">
-      <publishTime>02/06/2018 11:34:15</publishTime>
+      <publishTime>06/02/2018 11:34:15</publishTime>
     </File>
     <File Include="wwwroot/assets/img/demo/property-4.jpg">
-      <publishTime>02/06/2018 11:34:15</publishTime>
+      <publishTime>06/02/2018 11:34:15</publishTime>
     </File>
     <File Include="wwwroot/assets/img/demo/property-5.jpg">
-      <publishTime>02/06/2018 11:34:15</publishTime>
+      <publishTime>06/02/2018 11:34:15</publishTime>
     </File>
     <File Include="wwwroot/assets/img/demo/property-6.jpg">
-      <publishTime>02/06/2018 11:34:15</publishTime>
+      <publishTime>06/02/2018 11:34:15</publishTime>
     </File>
     <File Include="wwwroot/assets/img/demo/small-proerty-2.jpg">
-      <publishTime>02/06/2018 11:34:15</publishTime>
+      <publishTime>06/02/2018 11:34:15</publishTime>
     </File>
     <File Include="wwwroot/assets/img/demo/small-property-1.jpg">
-      <publishTime>02/06/2018 11:34:15</publishTime>
+      <publishTime>06/02/2018 11:34:15</publishTime>
     </File>
     <File Include="wwwroot/assets/img/demo/small-property-2.jpg">
-      <publishTime>02/06/2018 11:34:15</publishTime>
+      <publishTime>06/02/2018 11:34:15</publishTime>
     </File>
     <File Include="wwwroot/assets/img/demo/small-property-3.jpg">
-      <publishTime>02/06/2018 11:34:15</publishTime>
+      <publishTime>06/02/2018 11:34:15</publishTime>
     </File>
     <File Include="wwwroot/assets/img/dsdsds33 - Copy.png">
       <publishTime>02/06/2018 11:34:14</publishTime>
     </File>
+    <File Include="wwwroot/assets/img/FikirtepeKentselemlakLogo.png">
+      <publishTime>06/23/2018 13:02:45</publishTime>
+    </File>
     <File Include="wwwroot/assets/img/fikirtepe_ilan.png">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/19/2018 22:17:04</publishTime>
     </File>
     <File Include="wwwroot/assets/img/footer-logo-2.png">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/23/2018 09:53:45</publishTime>
     </File>
     <File Include="wwwroot/assets/img/footer-logo.png">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/23/2018 10:03:12</publishTime>
     </File>
     <File Include="wwwroot/assets/img/icon-shearch.png">
       <publishTime>02/06/2018 11:34:15</publishTime>
@@ -1819,11 +1825,14 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="wwwroot/assets/img/icon/shawer.png">
       <publishTime>02/06/2018 11:34:16</publishTime>
     </File>
+    <File Include="wwwroot/assets/img/ismailMahmutoglu.jpg">
+      <publishTime>01/07/2018 20:57:57</publishTime>
+    </File>
     <File Include="wwwroot/assets/img/logo.png">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/23/2018 13:19:37</publishTime>
     </File>
     <File Include="wwwroot/assets/img/page-header.jpg">
-      <publishTime>02/06/2018 11:34:15</publishTime>
+      <publishTime>06/02/2018 11:34:15</publishTime>
     </File>
     <File Include="wwwroot/assets/img/preloader.gif">
       <publishTime>02/06/2018 11:34:15</publishTime>
@@ -1832,28 +1841,28 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/06/2018 11:34:15</publishTime>
     </File>
     <File Include="wwwroot/assets/img/property-1/property1.jpg">
-      <publishTime>02/06/2018 11:34:16</publishTime>
+      <publishTime>06/02/2018 11:34:16</publishTime>
     </File>
     <File Include="wwwroot/assets/img/property-1/property2.jpg">
-      <publishTime>02/06/2018 11:34:16</publishTime>
+      <publishTime>06/02/2018 11:34:16</publishTime>
     </File>
     <File Include="wwwroot/assets/img/property-1/property3.jpg">
-      <publishTime>02/06/2018 11:34:16</publishTime>
+      <publishTime>06/02/2018 11:34:16</publishTime>
     </File>
     <File Include="wwwroot/assets/img/property-1/property4.jpg">
-      <publishTime>02/06/2018 11:34:16</publishTime>
+      <publishTime>06/02/2018 11:34:16</publishTime>
     </File>
     <File Include="wwwroot/assets/img/property-video.jpg">
-      <publishTime>02/06/2018 11:34:15</publishTime>
+      <publishTime>06/02/2018 11:34:15</publishTime>
     </File>
     <File Include="wwwroot/assets/img/similar/property-1.jpg">
-      <publishTime>02/06/2018 11:34:16</publishTime>
+      <publishTime>06/02/2018 11:34:16</publishTime>
     </File>
     <File Include="wwwroot/assets/img/similar/property-2.jpg">
-      <publishTime>02/06/2018 11:34:16</publishTime>
+      <publishTime>06/02/2018 11:34:16</publishTime>
     </File>
     <File Include="wwwroot/assets/img/similar/property-3.jpg">
-      <publishTime>02/06/2018 11:34:16</publishTime>
+      <publishTime>06/02/2018 11:34:16</publishTime>
     </File>
     <File Include="wwwroot/assets/img/skin/aero%402x.png">
       <publishTime>02/06/2018 11:34:16</publishTime>
@@ -1919,19 +1928,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/06/2018 11:34:17</publishTime>
     </File>
     <File Include="wwwroot/assets/img/slide-2.jpg">
-      <publishTime>02/06/2018 11:34:16</publishTime>
+      <publishTime>06/02/2018 11:34:16</publishTime>
     </File>
     <File Include="wwwroot/assets/img/slide1/slider-image-1.jpg">
-      <publishTime>02/06/2018 11:34:17</publishTime>
+      <publishTime>06/02/2018 11:34:17</publishTime>
     </File>
     <File Include="wwwroot/assets/img/slide1/slider-image-2.jpg">
-      <publishTime>02/06/2018 11:34:18</publishTime>
+      <publishTime>06/02/2018 11:34:18</publishTime>
     </File>
     <File Include="wwwroot/assets/img/slide1/slider-image-4.jpg">
-      <publishTime>02/06/2018 11:34:17</publishTime>
+      <publishTime>06/02/2018 11:34:17</publishTime>
     </File>
     <File Include="wwwroot/assets/img/slide2/1.jpg">
-      <publishTime>02/06/2018 11:34:18</publishTime>
+      <publishTime>06/02/2018 11:34:18</publishTime>
     </File>
     <File Include="wwwroot/assets/img/social_big/delicious_grey.png">
       <publishTime>02/06/2018 11:34:17</publishTime>
@@ -1994,7 +2003,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/06/2018 11:34:18</publishTime>
     </File>
     <File Include="wwwroot/assets/img/welcome-bg.png">
-      <publishTime>02/06/2018 11:34:15</publishTime>
+      <publishTime>06/02/2018 11:34:15</publishTime>
     </File>
     <File Include="wwwroot/assets/js/bootstrap-hover-dropdown.js">
       <publishTime>02/06/2018 11:34:18</publishTime>
@@ -2114,19 +2123,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/06/2018 11:34:12</publishTime>
     </File>
     <File Include="wwwroot/ilan.txt">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>07/02/2018 22:04:54</publishTime>
     </File>
     <File Include="wwwroot/images/banner1.svg">
-      <publishTime>02/06/2018 11:34:19</publishTime>
+      <publishTime>06/02/2018 11:34:19</publishTime>
     </File>
     <File Include="wwwroot/images/banner2.svg">
-      <publishTime>02/06/2018 11:34:19</publishTime>
+      <publishTime>06/02/2018 11:34:19</publishTime>
     </File>
     <File Include="wwwroot/images/banner3.svg">
-      <publishTime>02/06/2018 11:34:19</publishTime>
+      <publishTime>06/02/2018 11:34:19</publishTime>
     </File>
     <File Include="wwwroot/images/banner4.svg">
-      <publishTime>02/06/2018 11:34:19</publishTime>
+      <publishTime>06/02/2018 11:34:19</publishTime>
     </File>
     <File Include="wwwroot/js/angular.min.js">
       <publishTime>02/06/2018 15:53:32</publishTime>

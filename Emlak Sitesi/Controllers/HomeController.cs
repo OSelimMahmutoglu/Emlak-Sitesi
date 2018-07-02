@@ -17,8 +17,6 @@ namespace Emlak_Sitesi.Controllers
 {
     public class HomeController : Controller
     {
-
-
         public void DosyayaYaz()
         {
             Ilan İlan = new Ilan()
@@ -30,7 +28,7 @@ namespace Emlak_Sitesi.Controllers
                 EmlakTipi = "aRSA",
                 EklemeTarihi = DateTime.Now,
                 IlaniVeren = "öMER sELİM",
-                Fiyat = 1213,
+                Fiyat = "1213",
                 Ilce = "fİKİRTEPE",
                 SatisTipi = "SATILIK",
                 IlansAciklama = "İLAN AÇIKLAMASI",
@@ -51,14 +49,14 @@ namespace Emlak_Sitesi.Controllers
             notDefteri.Write(json);
             notDefteri.Close();
         }
-
-
         public ActionResult Index()
         {
             string path = Server.MapPath("/wwwroot");
             var json = System.IO.File.ReadAllText(path + "/ilan.txt");
             var result = JsonConvert.DeserializeObject<List<Ilan>>(json);
-            return View(result);
+            List<Ilan> data = result.ToList();
+            data = data.OrderByDescending(x => x.EklemeTarihi).ToList();
+            return View(data);
         }
 
         public ActionResult About()
@@ -133,6 +131,23 @@ namespace Emlak_Sitesi.Controllers
                 ModelState.AddModelError(string.Empty, "Hata:" + ex.Message);
                 return View(Form);
             }
+        }
+
+        public ActionResult Properties(Guid ID)
+        {
+            string path = Server.MapPath("/wwwroot");
+            var json = System.IO.File.ReadAllText(path + "/ilan.txt");
+            var result = JsonConvert.DeserializeObject<List<Ilan>>(json);
+            Ilan Ilan = result.FirstOrDefault(x => x.ID == ID);
+            ViewBag.Title = $"{Ilan.Baslik} at fikirtepekentselemlak.com - {Ilan.ID}";
+            List<Ilan> Ilanlarlar = result.Where(x => x.EmlakTipi == Ilan.EmlakTipi && x.ID != Ilan.ID).Take(6).ToList();
+
+            if (Ilanlarlar.Count <= 0)
+                ViewBag.Ilanlar = result.Take(6).ToList();
+            else
+                ViewBag.Ilanlar = Ilanlarlar;
+
+            return View(Ilan);
         }
     }
 }

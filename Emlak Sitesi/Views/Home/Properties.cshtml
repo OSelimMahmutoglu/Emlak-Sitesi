@@ -1,0 +1,185 @@
+﻿@model Emlak_Sitesi.Models.Ilan
+@{
+    ViewData["Title"] = ViewBag.Title;
+    List<Emlak_Sitesi.Models.Ilan> Ilanlar = ViewBag.Ilanlar;
+}
+
+<div class="page-head">
+    <div class="container">
+        <div class="row">
+            <div class="page-head-content">
+                <h1 class="page-title">@Model.Baslik</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End page header -->
+<!-- property area -->
+<div class="content-area single-property" style="background-color: #FCFCFC;">
+    &nbsp;
+    <div class="container">
+        <div class="clearfix padding-top-40">
+            <div class="col-md-8 single-property-content prp-style-1 ">
+                <div class="row">
+                    <div class="light-slide-item">
+                        <div class="box-two proerty-item">
+                            <div class="item-thumb center">
+                                <img src="~/wwwroot/assets/img/fikirtepe_ilan.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-property-wrapper">
+                    <div class="single-property-header">
+                        <h4>&nbsp;</h4>
+                        <h1 class="property-title pull-left">@Model.Baslik</h1>
+                        <span class="property-price pull-right">@Model.Fiyat ₺</span>
+                    </div>
+                    <div class="property-meta entry-meta clearfix ">
+                        <div class="col-xs-6 col-sm-3 col-md-3 p-b-15">
+                            @if (Model.SatisTipi == "SATILIK")
+                            {
+                                <span class="property-info-icon icon-tag">
+                                    <img src="~/wwwroot/assets/img/icon/sale-orange.png">
+                                </span>
+                            }
+                            <span class="property-info-entry">
+                                <span class="property-info-value">@Model.SatisTipi</span>
+                            </span>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 col-md-3 p-b-15">
+                            <span class="property-info icon-area">
+                                <img src="~/wwwroot/assets/img/icon/room-orange.png">
+                            </span>
+                            <span class="property-info-entry">
+                                <span class="property-info-value">@Model.BuyuklukM <b class="property-info-unit">m²</b></span>
+                            </span>
+                        </div>
+
+
+
+
+                    </div>
+                    <!-- .property-meta -->
+                    <!-- End description area  -->
+                    <div class="section additional-details">
+                        <h4 class="s-property-title">İlan Detayı</h4>
+                        <ul class="additional-details-list clearfix">
+                            <li>
+                                <span class="col-xs-6 col-sm-4 col-md-4 add-d-title">İLAN TARİHİ</span>
+                                <span class="col-xs-6 col-sm-8 col-md-8 add-d-entry">@Model.EklemeTarihi.ToString("dd MMMM yyyy")</span>
+                            </li>
+
+                            <li>
+                                <span class="col-xs-6 col-sm-4 col-md-4 add-d-title">GAYRİMENKUL TİPİ</span>
+                                <span class="col-xs-6 col-sm-8 col-md-8 add-d-entry">@Model.EmlakTipi</span>
+                            </li>
+                            <li>
+                                <span class="col-xs-6 col-sm-4 col-md-4 add-d-title">GAYRİMENKUL DURUMU</span>
+                                <span class="col-xs-6 col-sm-8 col-md-8 add-d-entry">@Model.SatisTipi</span>
+                            </li>
+                            <li>
+                                <span class="col-xs-6 col-sm-4 col-md-4 add-d-title">YER</span>
+                                <span class="col-xs-6 col-sm-8 col-md-8 add-d-entry">@Model.AdresAciklama</span>
+                            </li>
+                            <li>
+                                <span class="col-xs-6 col-sm-4 col-md-4 add-d-title">Büyüklük (m²)</span>
+                                <span class="col-xs-6 col-sm-8 col-md-8 add-d-entry">@Model.BuyuklukM m²</span>
+                            </li>
+                            @if (!string.IsNullOrEmpty(Model.MetrekareFiyati))
+                            {
+                                <li>
+                                    <span class="col-xs-6 col-sm-4 col-md-4 add-d-title">MetreKare Fiyatı</span>
+                                    <span class="col-xs-6 col-sm-8 col-md-8 add-d-entry">@Model.MetrekareFiyati ₺</span>
+                                </li>
+                            }
+                            <li>
+                                <span class="col-xs-6 col-sm-4 col-md-4 add-d-title">TOPLAM FİYAT</span>
+                                <span class="col-xs-6 col-sm-8 col-md-8 add-d-entry">@Model.Fiyat ₺</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h4 class="s-property-title">İlan Açıklaması</h4>
+                        <div class="s-property-content">
+                            <p>@Model.IlansAciklama</p>
+                        </div>
+                    </div>
+                    <div class="section property-share">
+                        <h4 class="s-property-title">Sosyal Ağ</h4>
+                        <div class="roperty-social">
+                            <ul>
+                                <li><a title="Share this on facebok " target="_blank" href="https://tr-tr.facebook.com/fikirtepekentselemlak"><img src="~/wwwroot/assets/img/social_big/facebook_grey.png"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p0">
+                <aside class="sidebar sidebar-property blog-asside-right">
+                    <div class="dealer-widget">
+                        <div class="dealer-content">
+                            <div class="inner-wrapper">
+                                <div class="clear">
+                                    <div class="col-xs-4 col-sm-4">
+                                        <img src="~/wwwroot/assets/img/ismailMahmutoglu.jpg" class="img-circle">
+                                    </div>
+                                    <div class="col-xs-8 col-sm-8 ">
+                                        <h3 class="dealer-name">
+                                            <a href="@Url.Action("iletisim","home")"> İsmail Mahmutoğlu</a>
+                                            <span>Emlakçı</span>
+                                        </h3>
+                                        <div class="dealer-social-media">
+                                            <a class="facebook" target="_blank" href="https://tr-tr.facebook.com/fikirtepekentselemlak">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clear">
+                                    <ul class="dealer-contacts">
+                                        <li>
+                                            <i class="pe-7s-map-marker strong"> </i>Fikirtepe Mahallesi Mandıra Caddesi No:36
+                                        </li>
+                                        <li><i class="pe-7s-mail strong"> </i> info@fikirtepekentselemlak.com</li>
+                                        <li><i class="pe-7s-call strong"> </i> +90 532 682 49 44</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default sidebar-menu similar-property-wdg wow fadeInRight animated">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">DİĞER İlanlar</h3>
+                        </div>
+                        <div class="panel-body recent-property-widget">
+                            <ul>
+                                @foreach (var item in Ilanlar)
+                                {
+                                    <li>
+                                        <div class="col-md-3 col-sm-3 col-xs-3 blg-thumb p0">
+                                            <a href="@Url.Action("Properties","Home" , new {ID= item.ID})">
+                                                <img src="~/wwwroot/assets/img/FikirtepeKentselemlakLogo.png">
+                                                <span class="property-seeker">
+                                                    <b class="b-1">F</b>
+                                                    <b class="b-2">K</b>
+                                                    <b class="b-1">E</b>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-8 col-sm-8 col-xs-8 blg-entry">
+                                            <h6> <a href="@Url.Action("Properties","Home" , new {ID= item.ID})">@item.Baslik </a></h6>
+                                            <span class="property-price">@item.Fiyat ₺</span>
+                                        </div>
+                                    </li>
+                                }
+
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+</div>
+
