@@ -98,14 +98,14 @@ namespace Emlak_Sitesi.Controllers
 
                 //SmtpClient smtp = new SmtpClient();
                 //smtp.UseDefaultCredentials = false;
-                //smtp.Credentials = new System.Net.NetworkCredential("destek@fikirtepekentselemlak.com", "asd123_.");
+                //smtp.Credentials = new System.Net.NetworkCredential("destek@fikirtepekentselemlak.com", "");
                 //smtp.Port = 587;
                 //smtp.Host = "mail.fikirtepekentselemlak.com";
                 //smtp.Send(ePosta);
 
                 SmtpClient smtpClient = new SmtpClient();
                 NetworkCredential basicCredential =
-                    new NetworkCredential("destek@fikirtepekentselemlak.com", "OMERihsan190");
+                    new NetworkCredential("destek@fikirtepekentselemlak.com", "");
                 MailMessage message = new MailMessage();
                 MailAddress fromAddress = new MailAddress("destek@fikirtepekentselemlak.com");
                 smtpClient.Port = 587;
